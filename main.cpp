@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool DeBug = true;
+bool DeBug = false;
 
 int sendMsg(string msg) {
     cout << msg << endl;
@@ -21,9 +21,10 @@ int TestNow(int x) {
 
 int main()
 {
+    int startingNumber = 75;
     string hr = "------------------------------";
-    cout << "/*" << hr << endl;
-    cout << "This is a test. " << TestNow(50) << endl;
-    cout << hr << "*/" << endl;
+    cout << hr << endl;
+    cout << "Your starting number is: " << startingNumber << endl << "The ending number is: " << TestNow(startingNumber) << endl;
+    cout << hr << endl;
     return 0;
 }
